@@ -6,48 +6,51 @@
   <title>Christian Novgrod - Resume</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
       max-width: 800px;
       margin: 3rem auto;
       padding: 2rem;
       line-height: 1.6;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      background: white;
+      box-shadow: 0 0 10px rgba(0,255,180,0.05);
       border-radius: 8px;
     }
 
     h1 {
       font-size: 2rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.25rem;
+      color: #58a6ff;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 0.3rem;
       margin-bottom: 0.5rem;
+      text-shadow: 0 0 5px #58a6ff;
     }
 
     h2 {
       margin-top: 2rem;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #21262d;
       font-size: 1.25rem;
       padding-bottom: 0.25rem;
-      color: #444;
+      color: #40c463;
+      text-shadow: 0 0 4px #40c46399;
+    }
+
+    a {
+      color: #8b949e;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #58a6ff;
+      text-decoration: underline;
     }
 
     p, li {
       font-size: 1rem;
     }
 
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     ul {
-      padding-left: 1.25rem;
+      padding-left: 1.5rem;
     }
 
     .contact-info {
@@ -60,7 +63,21 @@
 
     .experience-title {
       font-weight: bold;
+      color: #f78166;
       margin-top: 0.5rem;
+      text-shadow: 0 0 3px #f7816699;
+    }
+
+    /* Subtle glowing box for the main container */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(ellipse at center, rgba(0,255,180,0.03), transparent 70%);
+      z-index: -1;
     }
   </style>
 </head>
@@ -75,7 +92,7 @@
 
   <div class="section">
     <h2>About Me</h2>
-    <p>I'm a driven and curious individual with a passion for technology, creative problem-solving, and continuous learning. My goals include building innovative software that makes a positive impact, developing expertise in areas like computer vision and game development, and collaborating with others on meaningful projects. I’m especially interested in artificial intelligence, system programming, and interactive media.</p>
+    <p>I'm a driven and curious individual with a passion for technology, creative problem-solving, and continuous learning. My goals include building innovative software that makes a positive impact, developing expertise in areas like computer vision and game development, and collaborating with others on meaningful projects.</p>
     <p>I enjoy turning ideas into reality through code and am always looking for ways to grow and challenge myself.</p>
   </div>
 
