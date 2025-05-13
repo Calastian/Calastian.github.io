@@ -1,38 +1,107 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Christian Novgrod - Resume</title>
   <style>
-    body { font-family: sans-serif; max-width: 700px; margin: auto; padding: 2rem; }
-    h1, h2 { border-bottom: 1px solid #ddd; }
-    a { color: steelblue; text-decoration: none; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      line-height: 1.6;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background: white;
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 1px solid #ddd;
+      font-size: 1.25rem;
+      padding-bottom: 0.25rem;
+      color: #444;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    .contact-info {
+      margin-bottom: 1.5rem;
+    }
+
+    .section {
+      margin-top: 1.5rem;
+    }
+
+    .experience-title {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
+
   <h1>Christian Novgrod</h1>
-  <p><strong>Email:</strong> ChristianNovgrod.dev@gmail.com</p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/Calastian">Calastian</a></p>
 
-  <h2>About Me</h2>
-  <p>I'm a driven and curious individual with a passion for technology, creative problem-solving, and continuous learning. My goals include building innovative software that makes a positive impact, developing expertise in areas like computer vision and game development, and collaborating with others on meaningful projects. I’m especially interested in artificial intelligence, system programming, and interactive media. My skill set includes C++, Python, and experience with tools like Godot, OpenCV, and CMake. I enjoy turning ideas into reality through code and am always looking for ways to grow and challenge myself.</p>
+  <div class="contact-info">
+    <p><strong>Email:</strong> <a href="mailto:ChristianNovgrod.dev@gmail.com">ChristianNovgrod.dev@gmail.com</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Calastian" target="_blank">Calastian</a></p>
+  </div>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Languages: C++, Python, JavaScript, GDScript, YAML, HTML/CSS, Bash</li>
-    <li>Frameworks: React, CMake, Godot, D3, OpenCV</li>
-    <li>Tools: Git, Docker, Linux, Kali Linux, SteamWorks, VS Code, OBS, WireShark, GDB</li>
-  </ul>
+  <div class="section">
+    <h2>About Me</h2>
+    <p>I'm a driven and curious individual with a passion for technology, creative problem-solving, and continuous learning. My goals include building innovative software that makes a positive impact, developing expertise in areas like computer vision and game development, and collaborating with others on meaningful projects. I’m especially interested in artificial intelligence, system programming, and interactive media.</p>
+    <p>I enjoy turning ideas into reality through code and am always looking for ways to grow and challenge myself.</p>
+  </div>
 
-  <h2>Experience</h2>
-  <p><strong>Software Developer</strong>, Personal Game Project</p>
-  <ul>
-    <li>Designed and developed a multiplayer 3D game using Godot Engine with C++ and GDScript. Implemented a custom camera system inspired by Roblox, integrated Steam multiplayer functionality using SteamMultiplayerPeer, and created server-hosting logic to allow players to host games peer-to-peer. Also worked on shaders for visual effects like world borders, and balanced in-game item economies using a YAML-based configuration system.</li>
-  </ul>
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> C++, Python, JavaScript, GDScript, YAML, HTML/CSS, Bash</li>
+      <li><strong>Frameworks:</strong> React, CMake, Godot, D3.js, OpenCV</li>
+      <li><strong>Tools:</strong> Git, Docker, Linux, Kali Linux, Steamworks, VS Code, OBS, Wireshark, GDB</li>
+    </ul>
+  </div>
 
-  <h2>Education</h2>
-  <p><strong>BS in Computer Science</strong>, Appalachian State (2020–2024)</p>
+  <div class="section">
+    <h2>Experience</h2>
+    <p class="experience-title">Software Developer – Personal Game Project (2024 – Present)</p>
+    <ul>
+      <li>Developed a multiplayer 3D game using Godot Engine with C++ and GDScript.</li>
+      <li>Implemented a custom Roblox-style camera and peer-to-peer Steam multiplayer networking using SteamMultiplayerPeer.</li>
+      <li>Built visual shaders for world borders and created a YAML-based economic balancing system.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>BS in Computer Science</strong>, Appalachian State University (2020–2024)</p>
+  </div>
+
 </body>
 </html>
-
