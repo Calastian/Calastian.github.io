@@ -2,16 +2,47 @@ body {
   background-color: #0d1117;
   color: #c9d1d9;
   font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 2rem 3rem;
   line-height: 1.6;
-  box-shadow: 0 0 10px rgba(0,255,180,0.05);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Add a subtle container effect */
+.container {
+  max-width: none;
+  box-shadow: 0 0 20px rgba(0,255,180,0.05);
   border-radius: 8px;
+  background-color: rgba(13, 17, 23, 0.8);
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem 1.5rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem 1rem;
+  }
+  
+  .container {
+    padding: 1rem;
+    border-radius: 4px;
+  }
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #40c463;
   border-bottom: 2px solid #30363d;
   padding-bottom: 0.3rem;
@@ -22,15 +53,23 @@ h1 {
 h2 {
   margin-top: 2rem;
   border-bottom: 1px solid #21262d;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   padding-bottom: 0.25rem;
   color: #40c463;
+  text-shadow: 0 0 4px #40c46399;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #40c463;
+  margin-top: 1.5rem;
   text-shadow: 0 0 4px #40c46399;
 }
 
 a {
   color: #8b949e;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 a:hover {
@@ -39,7 +78,15 @@ a:hover {
 }
 
 p, li {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Improve text readability */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 ul {
@@ -71,6 +118,7 @@ nav {
   padding: 1rem 2rem;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border-radius: 8px 8px 0 0;
 }
 
 nav ul {
@@ -112,23 +160,144 @@ nav a.active {
 }
 
 .blog-post {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
   border: 1px solid #30363d;
-  border-radius: 8px;
-  background-color: rgba(33, 38, 45, 0.3);
+  border-radius: 12px;
+  background-color: rgba(33, 38, 45, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 255, 180, 0.1);
 }
 
 .blog-post h3 {
   color: #40c463;
   margin-top: 0;
+  margin-bottom: 0.5rem;
   text-shadow: 0 0 4px #40c46399;
+  font-size: 1.6rem;
 }
 
 .blog-date {
   color: #8b949e;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.blog-content {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+/* Comment System Styles */
+.comments-section {
+  border-top: 2px solid #30363d;
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+.comments-header {
+  font-size: 1.3rem;
+  color: #40c463;
   margin-bottom: 1rem;
+  text-shadow: 0 0 3px #40c46399;
+}
+
+.comment-form {
+  background-color: rgba(22, 27, 34, 0.6);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  margin-bottom: 2rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #c9d1d9;
+  font-family: inherit;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: none;
+  border-color: #40c463;
+  box-shadow: 0 0 8px rgba(64, 196, 99, 0.3);
+}
+
+.comment-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.comment-form button {
+  background-color: #40c463;
+  color: #0d1117;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #46d469;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(64, 196, 99, 0.3);
+}
+
+.comments-list {
+  margin-top: 1.5rem;
+}
+
+.comment {
+  background-color: rgba(13, 17, 23, 0.4);
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #58a6ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.comment-date {
+  color: #8b949e;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.comment-text {
+  color: #c9d1d9;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.no-comments {
+  color: #8b949e;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
 }
 
 /* Subtle glowing box for the main container */
