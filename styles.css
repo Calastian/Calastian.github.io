@@ -311,3 +311,187 @@ body::before {
   background: radial-gradient(ellipse at center, rgba(0,255,180,0.03), transparent 70%);
   z-index: -1;
 }
+
+/* Professional Resume Styling */
+.resume-subtitle {
+  color: #58a6ff;
+  font-size: 1.4rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.5rem;
+}
+
+.summary-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #c9d1d9;
+  margin-bottom: 1rem;
+}
+
+.experience-item {
+  margin-bottom: 2rem;
+  border-left: 3px solid #40c463;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  background: #40c463;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #40c46399;
+}
+
+.experience-header {
+  margin-bottom: 0.5rem;
+}
+
+.experience-header h3 {
+  color: #40c463;
+  margin: 0;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.company {
+  color: #58a6ff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+  margin: 0.2rem 0;
+}
+
+.duration {
+  color: #8b949e;
+  font-style: italic;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.project-title {
+  color: #40c463;
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.experience-details {
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+}
+
+.experience-details li {
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skill-category {
+  background: rgba(30, 36, 43, 0.5);
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+.skill-category h4 {
+  color: #40c463;
+  margin: 0 0 0.8rem 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.3rem;
+}
+
+.skill-category p {
+  margin: 0;
+  color: #c9d1d9;
+  line-height: 1.5;
+}
+
+.achievement-item {
+  background: rgba(30, 36, 43, 0.3);
+  padding: 1.2rem;
+  border-radius: 8px;
+  border-left: 4px solid #58a6ff;
+  margin-bottom: 1rem;
+}
+
+.achievement-item h4 {
+  color: #58a6ff;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.achievement-item p {
+  margin: 0;
+  line-height: 1.6;
+  color: #c9d1d9;
+}
+
+.education-item {
+  background: rgba(30, 36, 43, 0.3);
+  padding: 1.2rem;
+  border-radius: 8px;
+  border-left: 4px solid #f85149;
+}
+
+.education-item h3 {
+  color: #f85149;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.institution {
+  color: #58a6ff;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.certifications {
+  margin: 0;
+  padding-left: 1rem;
+  list-style: none; /* Remove default bullet points */
+}
+
+.certifications li {
+  margin-bottom: 0.5rem;
+  color: #c9d1d9;
+  position: relative;
+  padding-left: 0; /* Remove any default padding */
+}
+
+.certifications li::before {
+  content: '✓';
+  color: #40c463;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+/* Responsive adjustments for resume */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .experience-item {
+    padding-left: 1rem;
+  }
+  
+  .skill-category {
+    padding: 1rem;
+  }
+}
