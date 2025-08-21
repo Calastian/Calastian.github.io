@@ -1,0 +1,144 @@
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0,255,180,0.05);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #40c463;
+  border-bottom: 2px solid #30363d;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #40c46399;
+}
+
+h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid #21262d;
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+  color: #40c463;
+  text-shadow: 0 0 4px #40c46399;
+}
+
+a {
+  color: #8b949e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #58a6ff;
+  text-decoration: underline;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-top: 1.5rem;
+}
+
+.experience-title {
+  font-weight: bold;
+  color: #f78166;
+  margin-top: 0.5rem;
+  text-shadow: 0 0 3px #f7816699;
+}
+
+/* Navigation styles */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+  margin: -2rem -2rem 2rem -2rem;
+  padding: 1rem 2rem;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #8b949e;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #40c463;
+  background-color: rgba(64, 196, 99, 0.1);
+  text-shadow: 0 0 8px #40c46399;
+}
+
+nav a.active {
+  color: #40c463;
+  background-color: rgba(64, 196, 99, 0.15);
+  text-shadow: 0 0 5px #40c46399;
+}
+
+/* Section styles */
+.page-section {
+  display: none;
+}
+
+.page-section.active {
+  display: block;
+}
+
+.blog-post {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background-color: rgba(33, 38, 45, 0.3);
+}
+
+.blog-post h3 {
+  color: #40c463;
+  margin-top: 0;
+  text-shadow: 0 0 4px #40c46399;
+}
+
+.blog-date {
+  color: #8b949e;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Subtle glowing box for the main container */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(0,255,180,0.03), transparent 70%);
+  z-index: -1;
+}

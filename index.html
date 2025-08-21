@@ -4,122 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="./circutboard32x32.png">
+  <link rel="stylesheet" href="styles.css">
   <title>Christian Novgrod - Resume</title>
-  <style>
-    body {
-      background-color: #0d1117;
-      color: #c9d1d9;
-      font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 2rem;
-      line-height: 1.6;
-      box-shadow: 0 0 10px rgba(0,255,180,0.05);
-      border-radius: 8px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      color: #40c463;
-      border-bottom: 2px solid #30363d;
-      padding-bottom: 0.3rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 0 0 5px #40c46399;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      border-bottom: 1px solid #21262d;
-      font-size: 1.25rem;
-      padding-bottom: 0.25rem;
-      color: #40c463;
-      text-shadow: 0 0 4px #40c46399;
-    }
-
-    a {
-      color: #8b949e;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #58a6ff;
-      text-decoration: underline;
-    }
-
-    p, li {
-      font-size: 1rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    .contact-info {
-      margin-bottom: 1.5rem;
-    }
-
-    .section {
-      margin-top: 1.5rem;
-    }
-
-    .experience-title {
-      font-weight: bold;
-      color: #f78166;
-      margin-top: 0.5rem;
-      text-shadow: 0 0 3px #f7816699;
-    }
-
-    /* Subtle glowing box for the main container */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(ellipse at center, rgba(0,255,180,0.03), transparent 70%);
-      z-index: -1;
-    }
-  </style>
 </head>
 <body>
 
-  <h1>Christian Novgrod</h1>
-
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:ChristianNovgrod.dev@gmail.com">ChristianNovgrod.dev@gmail.com</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Calastian" target="_blank">Calastian</a></p>
-  </div>
-
-  <div class="section">
-    <h2>About Me</h2>
-    <p>I'm a driven and curious individual with a passion for technology, creative problem-solving, and continuous learning. My goals include building innovative software that makes a positive impact, developing expertise in areas like computer vision and game development, and collaborating with others on meaningful projects.</p>
-    <p>I enjoy turning ideas into reality through code and am always looking for ways to grow and challenge myself.</p>
-  </div>
-
-  <div class="section">
-    <h2>Skills</h2>
+  <nav>
     <ul>
-      <li><strong>Languages:</strong> C++, Python, JavaScript, GDScript, YAML, HTML/CSS, Bash</li>
-      <li><strong>Frameworks:</strong> React, CMake, Godot, D3.js, OpenCV</li>
-      <li><strong>Tools:</strong> Git, Docker, Linux, Kali Linux, Steamworks, VS Code, OBS, Wireshark, GDB</li>
+      <li><a href="#home" class="nav-link active" onclick="showSection('home')">Home</a></li>
+      <li><a href="#resume" class="nav-link" onclick="showSection('resume')">Resume</a></li>
+      <li><a href="#blog" class="nav-link" onclick="showSection('blog')">Blog</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <div class="section">
-    <h2>Experience</h2>
-    <p class="experience-title">Software Developer – Personal Game Project (2024 – Present)</p>
-    <ul>
-      <li>Developed a multiplayer 3D game using Godot Engine with C++ and GDScript.</li>
-      <li>Implemented a custom Roblox-style camera and peer-to-peer Steam multiplayer networking using SteamMultiplayerPeer.</li>
-      <li>Built visual shaders for world borders and created a YAML-based economic balancing system.</li>
-    </ul>
-  </div>
+  <!-- Home Section -->
+  <section id="home" class="page-section active">
+    <h1>Christian Novgrod</h1>
+    
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:ChristianNovgrod.dev@gmail.com">ChristianNovgrod.dev@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Calastian" target="_blank">Calastian</a></p>
+    </div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p><strong>BS in Computer Science</strong>, Appalachian State University (2020–2024)</p>
-  </div>
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I'm a driven and curious individual with a passion for technology, creative problem-solving, and continuous learning. My goals include building innovative software that makes a positive impact, developing expertise in areas like computer vision and game development, and collaborating with others on meaningful projects.</p>
+      <p>I enjoy turning ideas into reality through code and am always looking for ways to grow and challenge myself.</p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="page-section">
+    <h1>Resume</h1>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:ChristianNovgrod.dev@gmail.com">ChristianNovgrod.dev@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Calastian" target="_blank">Calastian</a></p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C++, Python, JavaScript, GDScript, YAML, HTML/CSS, Bash</li>
+        <li><strong>Frameworks:</strong> React, CMake, Godot, D3.js, OpenCV</li>
+        <li><strong>Tools:</strong> Git, Docker, Linux, Kali Linux, Steamworks, VS Code, OBS, Wireshark, GDB</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <p class="experience-title">Software Developer – Personal Game Project (2024 – Present)</p>
+      <ul>
+        <li>Developed a multiplayer 3D game using Godot Engine with C++ and GDScript.</li>
+        <li>Implemented a custom Roblox-style camera and peer-to-peer Steam multiplayer networking using SteamMultiplayerPeer.</li>
+        <li>Built visual shaders for world borders and created a YAML-based economic balancing system.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>BS in Computer Science</strong>, Appalachian State University (2020–2024)</p>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="page-section">
+    <h1>Blog</h1>
+    
+    <div class="blog-post">
+      <h3>Welcome to My Blog</h3>
+      <div class="blog-date">August 21, 2025</div>
+      <p>Welcome! This is where I'll be sharing my thoughts on software development, game programming, and various tech projects I'm working on. Stay tuned for updates on my multiplayer game project and other interesting developments.</p>
+    </div>
+
+    <div class="blog-post">
+      <h3>Building a Multiplayer Game with Godot</h3>
+      <div class="blog-date">Coming Soon</div>
+      <p>I'll be sharing insights from my experience developing a multiplayer 3D game using Godot Engine, including challenges with Steam networking integration and custom camera systems.</p>
+    </div>
+  </section>
+
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      const sections = document.querySelectorAll('.page-section');
+      sections.forEach(section => section.classList.remove('active'));
+      
+      // Remove active class from all nav links
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => link.classList.remove('active'));
+      
+      // Show selected section
+      document.getElementById(sectionId).classList.add('active');
+      
+      // Add active class to clicked nav link
+      event.target.classList.add('active');
+      
+      // Update page title
+      const titles = {
+        'home': 'Christian Novgrod - Home',
+        'resume': 'Christian Novgrod - Resume', 
+        'blog': 'Christian Novgrod - Blog'
+      };
+      document.title = titles[sectionId] || 'Christian Novgrod';
+    }
+  </script>
 
 </body>
 </html>
