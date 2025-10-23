@@ -495,3 +495,173 @@ body::before {
     padding: 1rem;
   }
 }
+
+/* Graduation Page Styling - App State Theme */
+#graduation {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 2px solid #FFD700;
+}
+
+.graduation-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  border-radius: 12px;
+  color: #000000;
+}
+
+.app-state-logo h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  font-weight: bold;
+}
+
+.university-colors {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.graduation-celebration {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #FFD700;
+}
+
+.celebration-image {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.congratulations {
+  color: #FFD700;
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.commencement-info {
+  font-size: 1.2rem;
+  color: #FFD700;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.commencement-details {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.commencement-details li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #c9d1d9;
+}
+
+.commencement-details li::before {
+  color: #FFD700;
+}
+
+.ceremony-date {
+  color: #FFD700;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+.ceremony-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.ceremony-time {
+  background: rgba(30, 36, 43, 0.8);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ceremony-time:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+}
+
+.ceremony-time h4 {
+  color: #FFD700;
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  text-align: center;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 0.5rem;
+}
+
+.ceremony-time ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ceremony-time li {
+  padding: 0.4rem 0;
+  color: #c9d1d9;
+  font-size: 1rem;
+}
+
+.highlight-ceremony {
+  border: 2px solid #FFD700;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(30, 36, 43, 0.9) 100%);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.graduate-highlight {
+  color: #FFD700 !important;
+  font-weight: bold;
+  font-size: 1.1rem !important;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  }
+  to {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 15px rgba(255, 215, 0, 0.4);
+  }
+}
+
+/* Responsive adjustments for graduation page */
+@media (max-width: 768px) {
+  .app-state-logo h1 {
+    font-size: 2rem;
+  }
+  
+  .congratulations {
+    font-size: 1.4rem;
+  }
+  
+  .ceremony-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .graduation-header {
+    padding: 1.5rem;
+  }
+}
