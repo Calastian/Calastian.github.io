@@ -155,17 +155,44 @@
       </div>
     </section>
 
-  <!-- Blog Section -->
-  <section id="blog" class="page-section">
-    <h1>Blog</h1>
-    
-    <div id="blog-posts-container">
-      <!-- Blog posts will be dynamically generated here -->
-    </div>
-  </section>
+    <!-- Blog Section -->
+    <section id="blog" class="page-section">
+      <h1>Blog</h1>
 
-  <script>      // Just add a new object to this array to create a new blog post!
+      <div id="blog-posts-container">
+        <!-- Blog posts will be dynamically generated here -->
+      </div>
+    </section>
+
+    <script>      // Just add a new object to this array to create a new blog post!
       const blogPosts = [
+        {
+          id: 'sixth-post',
+          title: 'Final Topic Presentations: Biometric Surveillance',
+          date: 'November 3rd, 2025',
+          content: ` 
+            <p> 
+              I want to explore the topic Biometric Surveillance what this is a automated collection and/or processing of biological or behavioral identifiers to detect, identify, track, or infer information about people. Includes live, continuous, or retrospective recognition in public or private spaces.
+              Biometric systems pose unique privacy risks. Unlike passwords, biometric traits can’t be changed if exposed, and widespread deployment enables continuous tracking and profiling. Data often get repurposed, stored centrally, and linked with other records creating powerful surveillance profiles. Biases and errors make harms worse for marginalized groups, and the mere presence of cameras chills public life. Because these risks are structural, technical fixes alone aren’t enough 
+              I want to explore this topic in the case of what is right or wrong or in what cases is it ethical or does this go against our privacy rights! 
+
+            </p>
+            `
+        },
+        {
+          id: 'fith-post',
+          title: 'Reflections on Privacy discussions',
+          date: 'October 24th, 2025',
+          content: `
+          <p>
+                On Privacy I think it really matters our digital imprint on the internet and theres a lot out there about everyone and it is a little scary to see and be able to track someones whole life
+                just by the simple things that are publically posted online. I feel like and I want a little more security on the internet of what people can and cannot see. Even though its technically impossible 
+                to remove things that have been posted or put online it is something I would like to be able to have as a right. 
+          </p>
+          
+          `
+
+        },
         {
           id: 'fourth-post',
           title: 'Reflections on Citizenfour',
@@ -292,7 +319,7 @@
       // Load blog posts when page loads
       document.addEventListener('DOMContentLoaded', function () {
         renderBlogPosts();
-        
+
         // Check URL hash and show appropriate section
         const hash = window.location.hash.substring(1); // Remove the # symbol
         if (hash && ['home', 'resume', 'blog', 'graduation'].includes(hash)) {
@@ -301,7 +328,7 @@
       });
 
       // Handle URL hash changes (when user clicks browser back/forward)
-      window.addEventListener('hashchange', function() {
+      window.addEventListener('hashchange', function () {
         const hash = window.location.hash.substring(1);
         if (hash && ['home', 'resume', 'blog', 'graduation'].includes(hash)) {
           showSection(hash);
