@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="./circutboard32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Christian Novgrod - Resume</title>
+  <title>Christian Novgrod - projects</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <nav>
       <ul>
         <li><a href="#home" class="nav-link active" onclick="showSection('home')">Home</a></li>
-        <li><a href="#resume" class="nav-link" onclick="showSection('resume')">Resume</a></li>
+        <li><a href="#projects" class="nav-link" onclick="showSection('projects')">Projects</a></li>
         <li><a href="#blog" class="nav-link" onclick="showSection('blog')">Blog</a></li>
       </ul>
     </nav>
@@ -33,127 +33,44 @@
       <div class="section">
         <h2>About Me</h2>
         <p>I'm a driven and curious individual with a passion for technology, creative problem-solving, and continuous
-          learning. My goals include building innovative software that makes a positive impact, developing expertise in
-          areas like computer vision and game development, and collaborating with others on meaningful projects.</p>
-        <p>I enjoy turning ideas into reality through code and am always looking for ways to grow and challenge myself.
+          learning. My goals include building innovative software that makes a positive impact, and collaborating with others on meaningful projects.</p>
+        
         </p>
       </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="page-section">
+    <!-- projects Section -->
+    <section id="projects" class="page-section">
       <h1>Christian Novgrod</h1>
-      <h2 class="resume-subtitle">Chief Executive Officer & Software Engineer</h2>
-
+      <h2 class="projects-subtitle">Info</h2>
       <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:ChristianNovgrod.dev@gmail.com">ChristianNovgrod.dev@gmail.com</a>
-        </p>
         <p><strong>GitHub:</strong> <a href="https://github.com/Calastian" target="_blank">github.com/Calastian</a></p>
         <p><strong>Company:</strong> <a href="https://nanosoftwareservices.com"
             target="_blank">nanosoftwareservices.com</a></p>
       </div>
 
       <div class="section">
-        <h2>Professional Summary</h2>
-        <p class="summary-text">Innovative technology leader and software engineer with expertise in AI development,
-          full-stack software solutions, and business operations. CEO of Nano Software Services LLC, specializing in
-          cutting-edge AI environmental monitoring systems, custom software development, and comprehensive technology
-          consulting services.</p>
+        <h2>ASL (American Sign Language) To Text Translator</h2>
+        <span class="company">Developed a Transformer Model to translate ASL gestures into English text using Python, OpenCV, MediaPipe, and C++</span>
+        <p class="summary-text">The goal of this project is to develop a machine learning model capable of translating American Sign Language (ASL) gestures into written English text in real time. 
+          This solution aims to bridge the communication gap between Deaf/hard-of-hearing individuals and non-ASL speakers, providing accessibility and inclusivity in various contexts.
+          While many resources exist for text or speech-based communication, there is a significant lack of real-time, automated tools for ASL users to convert their signed gestures into text.
+          Existing solutions often require expensive hardware or are not robust enough for diverse environments.
+          Our objective is to build an accessible, accurate, and user-friendly ASL-To-Text model using commodity hardware (e.g., webcams or mobile phone cameras).</p>
+        <video width="100%" controls style="margin-top: 20px; border-radius: 8px;">
+          <source src="./LiveDemoTranslating.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div class="section">
-        <h2>Professional Experience</h2>
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <h3>Chief Executive Officer & Founder</h3>
-            <span class="company">Nano Software Services LLC</span>
-            <span class="duration">2024 – Present</span>
-          </div>
-          <ul class="experience-details">
-            <li>Founded and lead technology company providing AI-driven environmental monitoring solutions and custom
-              software development services</li>
-            <li>Developed "Trash-Panda" AI system using computer vision and machine learning for real-time environmental
-              violation detection with expected 95% accuracy</li>
-            <li>Manage comprehensive service portfolio including custom PC builds, streaming setup consulting, and
-              business technology solutions</li>
-            <li>Oversee remote operations team delivering 24/7 support to clients worldwide</li>
-            <li>Drive business strategy, client relationships, and technical innovation across multiple service
-              verticals</li>
-          </ul>
-        </div>
+        <h2>Home Lab Infrastructure</h2>
+        <span class="company">Architected and deployed a complete virtualization and services infrastructure using Proxmox, managing game servers, databases, DNS filtering, and home automation</span>
+        <p class="summary-text">Designed and implemented a comprehensive home lab environment leveraging Proxmox as a hypervisor to manage multiple virtual machines and services. The infrastructure hosts video game servers via Pterodactyl for game management and deployment, runs TrueNAS for reliable network-attached storage and data redundancy, and uses Pi-hole for network-wide ad blocking and DNS filtering.
+          Additionally, the lab includes Home Assistant for home automation, CockPIT for streamlined server management and monitoring, and a PostgreSQL database server that powers backend APIs for custom Android and iOS applications.
+          This setup demonstrates expertise in infrastructure as code, virtualization, containerization, database management, and network administration—skills critical for DevOps and full-stack development roles.</p>
       </div>
 
-      <div class="section">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h4>Programming Languages</h4>
-            <p>C++, Python, JavaScript, HTML/CSS, YAML, Bash/PowerShell</p>
-          </div>
-          <div class="skill-category">
-            <h4>AI & Machine Learning</h4>
-            <p>Computer Vision, OpenCV, Machine Learning Algorithms, Edge Computing</p>
-          </div>
-          <div class="skill-category">
-            <h4>Frameworks & Tools</h4>
-            <p>React, CMake, D3.js, Git, Docker, Node.js, Express.js</p>
-          </div>
-          <div class="skill-category">
-            <h4>Systems & Platforms</h4>
-            <p>Linux, Windows, Kali Linux, VS Code, OBS, Wireshark, Network Diagnostics</p>
-          </div>
-          <div class="skill-category">
-            <h4>Business & Leadership</h4>
-            <p>Team Management, Strategic Planning, Client Relations, Technology Consulting</p>
-          </div>
-          <div class="skill-category">
-            <h4>Specialized Services</h4>
-            <p>Custom PC Building, Streaming Setup, System Diagnostics, Hardware Optimization</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Key Projects & Achievements</h2>
-        <div class="achievement-item">
-          <h4>Trash-Panda AI Environmental Monitor</h4>
-          <p>Pioneered AI-driven environmental monitoring system with real-time computer vision detection, The goal
-            being to achieve 95% accuracy in environmental violation identification with edge computing for minimal
-            latency.</p>
-        </div>
-        <div class="achievement-item">
-          <h4>Nano Software Services Platform</h4>
-          <p>Built comprehensive business website and service platform supporting multiple technology verticals
-            including AI development, custom software solutions, and hardware services.</p>
-        </div>
-        <div class="achievement-item">
-          <h4>Custom Software Development Solutions</h4>
-          <p>Developed scalable software architectures and custom applications for diverse client needs, implementing
-            robust networking protocols and system integrations for business applications.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>Bachelor of Science in Computer Science</h3>
-          <span class="institution">Appalachian State University</span>
-          <span class="duration">2020 – 2025</span>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Certifications & Expertise</h2>
-        <ul class="certifications">
-          <li>AI Model Development & Computer Vision Implementation</li>
-          <li>Data Science Certificate</li>
-          <li>Full-Stack Web Development & Software Architecture</li>
-          <li>Network Security & System Diagnostics</li>
-          <li>Business Operations & Technology Consulting</li>
-        </ul>
-      </div>
-    </section>
 
     <!-- Blog Section -->
     <section id="blog" class="page-section">
@@ -327,7 +244,7 @@
         // Update page title
         const titles = {
           'home': 'Christian Novgrod - Home',
-          'resume': 'Christian Novgrod - Resume',
+          'projects': 'Christian Novgrod - projects',
           'blog': 'Christian Novgrod - Blog',
         };
         document.title = titles[sectionId] || 'Christian Novgrod';
@@ -339,7 +256,7 @@
 
         // Check URL hash and show appropriate section
         const hash = window.location.hash.substring(1); // Remove the # symbol
-        if (hash && ['home', 'resume', 'blog', 'graduation'].includes(hash)) {
+        if (hash && ['home', 'projects', 'blog', 'graduation'].includes(hash)) {
           showSection(hash);
         }
       });
@@ -347,7 +264,7 @@
       // Handle URL hash changes (when user clicks browser back/forward)
       window.addEventListener('hashchange', function () {
         const hash = window.location.hash.substring(1);
-        if (hash && ['home', 'resume', 'blog', 'graduation'].includes(hash)) {
+        if (hash && ['home', 'projects', 'blog', 'graduation'].includes(hash)) {
           showSection(hash);
         }
       });
